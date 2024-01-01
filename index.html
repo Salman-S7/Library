@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="show-books">
+        <h1 class="show-books-header">These are the books</h1>
+        <ul id="books-container">
+            <!-- <li id="book-card">
+                <div class="b-title">Book Title</div>
+                <div>Book Author</div>
+                <div>No. of pages</div>
+                <div>Reading complete</div>
+                <div class="action-btns">
+                    <button>Delete</button>
+                    <button>change read status</button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="add-books">
+        <h1>Add the books from here </h1>
+        <form id="bookForm">
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title" placeholder="Enter the books name" required>
+            <label for="pages">Enter the no. of pages: </label>
+            <input type="number" id="pages" name="pages" placeholder="Enter the no. of pages in the book" required>
+            <label for="author">Author: </label>
+            <input type="text" id="author" name="author" placeholder="Enter the authors name" required>
+            <label>Reading completed: </label>
+            <label><input type="radio" name="read" value="true" required> Yes</label>
+            <label><input type="radio" name="read" value="false" required> No</label>
+            <button type="submit">ADD BOOK</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
